@@ -25,8 +25,7 @@ async function setupTestEnvironment() {
   const dai = await ethers.getContractAt("IERC20", mockData.DAI_ADDRESS);
   const usdc = await ethers.getContractAt("IERC20", mockData.USDC_ADDRESS);
   const uniswapRouter = await ethers.getContractAt("IUniswapV2Router02", mockData.UNISWAP_ROUTER_ADDRESS);
-  const aaveLendingPool = await ethers.getContractAt("ILendingPool", mockData.AAVE_LENDING_POOL_ADDRESS);
-  
+  const aaveLendingPool = await ethers.getContractAt("contracts/interfaces/ILendingPool.sol:ILendingPool", mockData.AAVE_LENDING_POOL_ADDRESS);
   // Deploy sandwich contract - use higher gas price for tests
   const FlashLoanSandwich = await ethers.getContractFactory("FlashLoanSandwich");
   const sandwichContract = await FlashLoanSandwich.deploy(

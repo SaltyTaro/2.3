@@ -44,7 +44,7 @@ describe("FlashLoanSandwich", function () {
     dai = await ethers.getContractAt("IERC20", DAI_ADDRESS);
     usdc = await ethers.getContractAt("IERC20", USDC_ADDRESS);
     uniswapRouter = await ethers.getContractAt("IUniswapV2Router02", UNISWAP_ROUTER_ADDRESS);
-    aaveLendingPool = await ethers.getContractAt("ILendingPool", AAVE_LENDING_POOL_ADDRESS);
+    aaveLendingPool = await ethers.getContractAt("contracts/interfaces/ILendingPool.sol:ILendingPool", AAVE_LENDING_POOL_ADDRESS);
     
     // Deploy sandwich contract
     const FlashLoanSandwich = await ethers.getContractFactory("FlashLoanSandwich");
