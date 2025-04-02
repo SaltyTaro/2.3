@@ -1,0 +1,59 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Hardhat files
+cache/
+artifacts/
+typechain/
+typechain-types/
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Log files
+logs/
+
+# Generated data
+data/profit_log.json
+data/analysis/
+data/transaction_data/
+
+# Coverage files
+coverage/
+coverage.json
+
+# Production build files
+dist/
+build/
+out/
+
+# Temporary files
+.tmp/
+temp/
+
+# Ignore package-lock for development
+# package-lock.json
+
+# Gas report
+gasReporterOutput.json
+
+# Solidity coverage
+coverage/
+coverage.json
+
+# Flatten output
+flatten/

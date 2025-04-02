@@ -1,0 +1,37 @@
+{
+    "name": "mev-sandwich-bot",
+    "version": "1.0.0",
+    "description": "MEV Sandwich Trading Bot with Flash Loans",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "dev": "NODE_ENV=development node index.js",
+      "test": "mocha test/**/*.test.js",
+      "lint": "eslint .",
+      "deploy": "npx hardhat run scripts/deploy.js --network mainnet",
+      "simulate": "NODE_ENV=development SIMULATION_MODE=true node index.js",
+      "generate-env": "node -e \"require('./config');\""
+    },
+    "dependencies": {
+      "@ethersproject/address": "^5.7.0",
+      "@ethersproject/solidity": "^5.7.0",
+      "abi-decoder": "^2.4.0",
+      "dotenv": "^16.0.3",
+      "ethers": "^5.7.2",
+      "winston": "^3.8.2",
+      "ws": "^8.11.0"
+    },
+    "devDependencies": {
+      "@nomiclabs/hardhat-ethers": "^2.2.1",
+      "@nomiclabs/hardhat-waffle": "^2.0.3",
+      "chai": "^4.3.7",
+      "eslint": "^8.29.0",
+      "ethereum-waffle": "^3.4.4",
+      "hardhat": "^2.12.3",
+      "mocha": "^10.1.0"
+    },
+    "engines": {
+      "node": ">=14.0.0"
+    },
+    "license": "MIT"
+  }

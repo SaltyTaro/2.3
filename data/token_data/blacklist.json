@@ -1,0 +1,124 @@
+{
+    "blacklistedTokens": [
+      {
+        "address": "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
+        "symbol": "SUSHI",
+        "name": "SushiToken",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0x2b591e99afe9f32eaa6214f7b7629768c40eeb39",
+        "symbol": "HEX",
+        "name": "HEX",
+        "reason": "Rebasing token"
+      },
+      {
+        "address": "0x798d1be841a82a273720ce31c822c61a67a601c3",
+        "symbol": "DIGG",
+        "name": "Digg",
+        "reason": "Rebasing token"
+      },
+      {
+        "address": "0x67c597624b17b16fb77959217360b7cd18284253",
+        "symbol": "MARK",
+        "name": "Benchmark Protocol",
+        "reason": "Rebasing token"
+      },
+      {
+        "address": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
+        "symbol": "AAVE",
+        "name": "Aave Token",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+        "symbol": "MKR",
+        "name": "Maker",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0xa693b19d2931d498c5b318df961919bb4aee87a5",
+        "symbol": "UST",
+        "name": "Wrapped UST Token",
+        "reason": "Unstable token"
+      },
+      {
+        "address": "0x6123b0049f904d730db3c36a31167d9d4121fa6b",
+        "symbol": "RBN",
+        "name": "Ribbon",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+        "symbol": "UNI",
+        "name": "Uniswap",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0xc0d4ceb216b3ba9c3701b291766fdcba977cec3a",
+        "symbol": "BUIDL",
+        "name": "DFOHub",
+        "reason": "Dynamic fee token"
+      },
+      {
+        "address": "0xd533a949740bb3306d119cc777fa900ba034cd52",
+        "symbol": "CRV",
+        "name": "Curve DAO Token",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0x0391d2021f89dc339f60fff84546ea23e337750f",
+        "symbol": "BOND",
+        "name": "BarnBridge Governance Token",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0x9d65ff81a3c488d585bbfb0bfe3c7707c7917f54",
+        "symbol": "SSV",
+        "name": "SSV Token",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0x0fd10b9899882a6f2fcb5c371e17e70fdee00c38",
+        "symbol": "PUNDIX",
+        "name": "Pundi X",
+        "reason": "Custom transfer logic"
+      },
+      {
+        "address": "0x3845badade8e6dff049820680d1f14bd3903a5d0",
+        "symbol": "SAND",
+        "name": "The Sandbox",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0x1ceb5cb57c4d4e2b2433641b95dd330183c8f25f",
+        "symbol": "KP3R",
+        "name": "Keep3rV1",
+        "reason": "Complex bonding mechanics"
+      },
+      {
+        "address": "0xa2120b9e674d3fc3875f415a7df52e382f141225",
+        "symbol": "ATA",
+        "name": "Automata",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0xba100000625a3754423978a60c9317c58a424e3d",
+        "symbol": "BAL",
+        "name": "Balancer",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0x3506424f91fd33084466f402d5d97f05f8e3b4af",
+        "symbol": "CHZ",
+        "name": "Chiliz",
+        "reason": "Fee on transfer"
+      },
+      {
+        "address": "0xc944e90c64b2c07662a292be6244bdf05cda44a7",
+        "symbol": "GRT",
+        "name": "The Graph",
+        "reason": "Fee on transfer"
+      }
+    ]
+  }

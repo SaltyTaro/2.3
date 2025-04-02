@@ -1,0 +1,76 @@
+```
+mev-sandwich-bot/
+├── .env                           # Environment variables configuration (generated)
+├── .gitignore                     # Git ignore file
+├── index.js                       # Main entry point for the application
+├── config.js                      # Configuration management
+├── package.json                   # Project dependencies and scripts
+├── hardhat.config.js              # Hardhat configuration for contract development
+├── README.md                      # Project documentation
+│
+├── abis/                          # Contract ABIs
+│   ├── FlashLoanSandwich.json     # ABI for the main contract
+│   ├── UniswapV2Router.json       # Uniswap V2 Router ABI
+│   ├── SushiswapRouter.json       # Sushiswap Router ABI
+│   ├── UniswapV2Factory.json      # Uniswap V2 Factory ABI
+│   ├── UniswapV2Pair.json         # Uniswap V2 Pair ABI
+│   ├── ERC20.json                 # Standard ERC20 ABI
+│   ├── AaveLendingPool.json       # Aave Lending Pool ABI
+│   └── contract-address.json      # Deployed contract addresses
+│
+├── contracts/                     # Smart contract source code
+│   ├── FlashLoanSandwich.sol      # Main sandwich contract
+│   ├── interfaces/                # Interface definitions
+│   │   ├── IFlashLoanReceiver.sol # Flash loan receiver interface
+│   │   ├── ILendingPool.sol       # Lending pool interface
+│   │   ├── IUniswapV2Router02.sol # Uniswap router interface
+│   │   ├── IUniswapV2Factory.sol  # Uniswap factory interface
+│   │   ├── IUniswapV2Pair.sol     # Uniswap pair interface
+│   │   ├── IERC20.sol             # ERC20 token interface
+│   │   └── IWETH.sol              # WETH interface
+│   └── libraries/                 # Utility libraries
+│       ├── SafeERC20.sol          # Safe ERC20 operations
+│       └── SafeMath.sol           # Safe math operations
+│
+├── core/                          # Core bot logic
+│   ├── MempoolObserver.js         # Mempool monitoring service
+│   └── OpportunityProcessor.js    # Opportunity processing service
+│
+├── utils/                         # Utility modules
+│   ├── logger.js                  # Logging utility
+│   ├── providers.js               # RPC provider management
+│   ├── TokenManager.js            # Token operations and validation
+│   ├── TransactionDecoder.js      # Transaction decoding logic
+│   ├── SandwichOptimizer.js       # Parameter optimization
+│   ├── SandwichExecutor.js        # Transaction execution
+│   └── ProfitTracker.js           # Profit tracking and analysis
+│
+├── scripts/                       # Utility scripts
+│   ├── deploy.js                  # Contract deployment script
+│   ├── verify.js                  # Contract verification script
+│   ├── simulate.js                # Simulation script
+│   └── analysis/                  # Analysis scripts
+│       ├── profitAnalysis.js      # Analyze profitability
+│       └── targetWalletAnalysis.js # Analyze target wallet transactions
+│
+├── test/                          # Test suite
+│   ├── contracts/                 # Smart contract tests
+│   │   └── FlashLoanSandwich.test.js # Contract test
+│   ├── integration/               # Integration tests
+│   │   ├── sandwichExecutionTest.js # Full sandwich execution test
+│   │   └── flashLoanTest.js       # Flash loan integration test
+│   └── utils/                     # Test utilities
+│       ├── setupTestEnvironment.js # Test environment setup
+│       └── mockData.js            # Mock data for tests
+│
+├── logs/                          # Log files
+│   ├── mev-sandwich.log           # Main application log
+│   └── error.log                  # Error log
+│
+└── data/                          # Data storage
+    ├── profit_log.json            # Profit tracking data
+    ├── token_data/                # Token metadata
+    │   └── blacklist.json         # Blacklisted tokens
+    └── transaction_data/          # Transaction data storage
+        └── successful_sandwiches/ # Successful sandwich data
+```
